@@ -11,7 +11,7 @@ import (
 	"sync"
 
 	dockerapi "github.com/fsouza/go-dockerclient"
-	"github.com/docker/engine-api/types/swarm"
+	"github.com/docker/docker/api/types/swarm"
 )
 
 var serviceIDPattern = regexp.MustCompile(`^(.+?):([a-zA-Z0-9][a-zA-Z0-9_.-]+):[0-9]+(?::udp)?$`)
